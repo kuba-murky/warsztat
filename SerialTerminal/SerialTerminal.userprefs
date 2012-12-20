@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="SerialTerminal/Main.cs">
     <Files>
-      <File FileName="SerialTerminal/Main.cs" Line="10" Column="4" />
+      <File FileName="SerialTerminal/Main.cs" Line="42" Column="46" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
