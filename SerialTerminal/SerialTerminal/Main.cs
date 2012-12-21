@@ -58,6 +58,7 @@ namespace SerialTerminal
 			Thread thr=new Thread(new ParameterizedThreadStart(OnChars));//stworzenie wątku odbierającego
 			thr.Start(SP);//uruchomienie funkcji OnChars w wątku. Jako parametr jest przekazywany obiekt klasy portu szeregowego
 			
+			Console.TreatControlCAsInput=true;//traktuj ctrl+c jako znak i nie kończ wtedy applikacji tylko prześlij do urządzenia
 			ConsoleKeyInfo cmd;
 			do {
 				cmd=Console.ReadKey(true);//pobranie pojedynczego znaku z konsoli (bez wypisania go na terminal)
