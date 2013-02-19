@@ -25,7 +25,7 @@ namespace SerialTerminal
 			string[] AvailablePorts=SerialPort.GetPortNames();//pobranie dostępnych portów szeregowych
 			
 			Console.WriteLine("Select serial port");
-			for (int i=0;i<AvailablePorts.Length;i++) {	//wypisanie dostępnych portów
+			for (int i=0;i<AvailablePorts.Length;i++) {//wypisanie dostępnych portów
 				Console.WriteLine("{0} - {1}",i,AvailablePorts[i]);
 			}
 			

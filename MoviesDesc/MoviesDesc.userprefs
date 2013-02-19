@@ -1,9 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MoviesDesc/ProgramParams.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MoviesDesc/Main.cs">
     <Files>
-      <File FileName="MoviesDesc/Main.cs" Line="20" Column="1" />
-      <File FileName="MoviesDesc/ProgramParams.cs" Line="93" Column="3" />
+      <File FileName="MoviesDesc/Main.cs" Line="28" Column="5" />
+      <File FileName="MoviesDesc/ProgramParams.cs" Line="90" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
