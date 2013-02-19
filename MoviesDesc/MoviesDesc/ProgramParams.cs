@@ -47,7 +47,7 @@ namespace MoviesDesc
 			ShowVersion=false;
 		}
 		
-		public bool ParseArgs(string[] ProgramArgs)
+		public int ParseArgs(string[] ProgramArgs)
 		{
 			int p=0;
 			try {
@@ -65,29 +65,29 @@ namespace MoviesDesc
 					p++;
 				}
 			} catch {
-				return false;
+				return p+1;
 			}
-			return true;
+			return 0;
 		}
 		
 		public string GetHelp()
 		{
 			return "Program Parameters: \n" +
-				"-k/--input-kind	- Kind of input data. Available: Directory, DirectoryList, File, FileList and ListInFile\n" +
-				"-i/--input     	- Inputh path. Role of this path depends on kind of input\n" +
-				"               	  * Kind: Directory,     Meaning: Single directory name\n" +
-				"               	  * Kind: DirectoryList, Meaning: Scanned for directories root directory name\n" +
-				"               	  * Kind: File,          Meaning: Single file name\n" +
-				"               	  * Kind: FileList,      Meaning: Scanned for files root directory name\n" +
-				"               	  * Kind: ListInFile,    Meaning: Name of file with movies list\n" +
-				"-o/--output    	- Output directory name (created if no exists)\n" +
-				"-t/--threads   	- Number of searching threads\n" +
-				"-s/--sort-by   	- Output order type. Available: None,Alpha,Rating,Duration\n" +
-				"-r/--recursive 	- Search recursive (available for this kinds: DirectoryList, FileList)\n" +
-				"-e/--exts			- Coma-separated list of movies file extinsions\n" +
-				"-g/--gui       	- Display graphical user interface instead of console\n" +
-				"-h/--help      	- Show this help\n" +
-				"-v/--version   	- Show program version\n";
+				"-k/--input-kind KIND	- Kind of input data. Available: Directory, DirectoryList, File, FileList and ListInFile\n" +
+				"-i/--input PATH     	- Inputh path. Role of this path depends on kind of input\n" +
+				"                    	  * Kind: Directory,     Meaning: Single directory name\n" +
+				"                    	  * Kind: DirectoryList, Meaning: Scanned for directories root directory name\n" +
+				"                    	  * Kind: File,          Meaning: Single file name\n" +
+				"                    	  * Kind: FileList,      Meaning: Scanned for files root directory name\n" +
+				"                    	  * Kind: ListInFile,    Meaning: Name of file with movies list\n" +
+				"-o/--output PATH    	- Output directory name (created if no exists)\n" +
+				"-t/--threads NUMBER 	- Number of searching threads\n" +
+				"-s/--sort-by TYPE   	- Output order type. Available: None,Alpha,Rating,Duration\n" +
+				"-r/--recursive      	- Search recursive (available for this kinds: DirectoryList, FileList)\n" +
+				"-e/--exts	LIST	 	- Coma-separated list of movies file extinsions\n" +
+				"-g/--gui            	- Display graphical user interface instead of console\n" +
+				"-h/--help           	- Show this help\n" +
+				"-v/--version        	- Show program version\n";
 		}
 		
 		private List<string> SplitExts(string Exts)
